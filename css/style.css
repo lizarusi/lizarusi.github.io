@@ -5960,12 +5960,19 @@ body .header-perfomance h3 {
     margin: 0 auto;
   }
   body h1 {
-    font-size: 34px;
-  }
-  body h2 {
     font-size: 28px;
   }
+  body h2 {
+    font-size: 20px;
+  }
   body h3 {
-    font-size: 15px;
+    font-size: 12px;
+  }
+  body .wrap-time-part div {
+    float: left;
+    padding: 12px 5px;
+  }
+  body .time-container .time {
+    padding: 10px;
   }
 }
