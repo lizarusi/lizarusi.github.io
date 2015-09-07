@@ -5830,28 +5830,39 @@ h3 {
   font-size: 20px;
 }
 h1 {
-  color: #f1c40f;
   font-size: 42px;
 }
 h2,
 h1,
 p,
 h3,
+h4,
 .wrap-time-part {
   font-family: Roboto;
   font-weight: 700;
 }
-h2,
-h1,
-h3,
+.packages h3,
+.header h2,
+.header h1,
+.header h3,
 .wrap-time-part div {
   text-transform: uppercase;
+}
+body {
+  /* Firefox 19+ */
+  /* Firefox 18- */
 }
 body .top-menu {
   background-color: rgba(0, 0, 0, 0.65);
   border: none!important;
   text-transform: uppercase;
   margin: 0;
+}
+body section {
+  position: relative;
+}
+body .form-container {
+  padding: 0;
 }
 body .top-menu a {
   border: none!important;
@@ -5861,6 +5872,30 @@ body .top-menu ul {
 }
 body .header {
   background-image: url("../images/header-bg.png");
+}
+body .packages {
+  background-image: url("../images/bg2.png");
+}
+body .want-to-play {
+  background-image: url("../images/bg-want-to-play.png");
+}
+body .bithday {
+  background-image: url("../images/bg-3.png");
+}
+body .action-form {
+  background-image: url("../images/bg-4.png");
+  min-height: 352px;
+}
+body .map {
+  background-image: url("../images/bg-5.png");
+  min-height: 422px;
+  z-index: 96;
+}
+body .header,
+body .packages,
+body .want-to-play,
+body .bithday,
+body .action-form {
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -5870,16 +5905,63 @@ body .logo-container {
   min-height: 114px;
   margin: 50px 0 80px 0;
 }
-body input[type=button] {
-  background: url('../images/button-bg.png');
-  width: 173px;
+body .footer {
+  background-image: url("../images/bg-6.png");
+  min-height: 228px;
+  margin-top: -24px;
+  z-index: 69;
+}
+body input[type='button'] {
   height: 34px;
   border: none!important;
-  color: black;
+  margin-top: 5px;
   font-family: Roboto;
   font-weight: 700;
   font-size: 13px;
   text-transform: uppercase;
+}
+body input[type='text']::-webkit-input-placeholder {
+  color: #f1c40f;
+}
+body input[type='text']::-moz-placeholder {
+  color: #f1c40f;
+}
+body input[type='text']:-moz-placeholder {
+  color: #f1c40f;
+}
+body input[type='text']:-ms-input-placeholder {
+  color: #f1c40f;
+}
+body .pack-btn {
+  color: black;
+  background-image: url("../images/pack-btn.png");
+  width: 173px;
+  margin-bottom: 8px;
+  background-color: transparent;
+}
+body .pack-btn-o {
+  background-image: url("../images/pack-btn-o.png");
+  background-color: transparent;
+  color: white;
+  width: 173px;
+}
+body .big-button {
+  color: black;
+  background: url('../images/button-lg.png');
+  width: 310px;
+}
+body .button-input {
+  color: black;
+  background: url('../images/button-bg.png');
+  width: 173px;
+}
+body .form-control {
+  background-color: #342e28;
+  border: 2pt solid #f1c40f;
+  border-radius: 4px;
+  margin: 8px auto;
+  color: #f1c40f;
+  font-size: 13px;
 }
 body .logo {
   margin-left: -59px;
@@ -5890,21 +5972,24 @@ body .phones {
 body .phones img {
   margin-bottom: 10px;
 }
-body .header-perfomance div {
-  float: left;
-}
 body .header-perfomance h3 {
   font-size: 18px;
   font-weight: 400;
 }
-body .header-perfomance span {
+body .header-perfomance span,
+body .action h1 {
   color: #f1c40f;
+}
+body .action h1,
+body .form-container p {
+  margin-top: 0;
 }
 body .time-container p {
   font-size: 17px;
   text-transform: none;
 }
-body .time-container {
+body .time-container,
+body .caption {
   font-size: 24px;
 }
 body .time-container .time {
@@ -5919,6 +6004,249 @@ body .wrap-time-part div {
 body .header-perfomance h3 {
   margin: 15px 0;
 }
+body .form-container p {
+  font-weight: 400;
+  font-size: 16px;
+}
+body .caption,
+body .strike {
+  position: relative;
+  text-align: center;
+  color: #f1c40f;
+  width: 100%;
+}
+body .caption {
+  border-top: solid 5px;
+  margin-top: 50px;
+}
+body .caption div {
+  background: #fff;
+  position: relative;
+  display: inline-block;
+  padding: 0 21px;
+  top: -22px;
+}
+body .caption h3 {
+  margin: 0;
+}
+body .reason {
+  text-align: center;
+}
+body .reason p {
+  font-size: 16px;
+  color: #4c3f2f;
+}
+body .strike {
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+}
+body .strike > h3 {
+  position: relative;
+  display: inline-block;
+  padding: 15px;
+}
+body .center-form {
+  max-width: 310px;
+  margin: 0 auto;
+}
+body .strike > h3:before,
+body .strike > h3:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 9999px;
+  height: 5px;
+  margin: -4px;
+  background: #f1c40f;
+}
+body .strike > h3:before {
+  right: 100%;
+  margin-right: 15px;
+}
+body .strike > h3:after {
+  left: 100%;
+  margin-left: 15px;
+}
+body .packages {
+  color: white;
+}
+body .packages h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 34px 0 0 0;
+}
+body .packages h3 {
+  margin: 0;
+  padding: 0;
+}
+body .packages img {
+  margin: 7px 0;
+}
+body .packages h2 {
+  font-size: 22px;
+  margin: 10px 12px;
+}
+body .packages h4 {
+  font-size: 17px;
+  font-weight: 700;
+  margin: 5px 0;
+}
+body .packages span {
+  color: #f1c40f;
+}
+body .packages {
+  padding: 30px 0;
+}
+body .want-to-play {
+  color: #212121;
+}
+body .want-to-play h1 {
+  font-size: 24px;
+  text-transform: uppercase;
+  border-bottom: 5px solid #f1c40f;
+}
+body .want-to-play h2 {
+  font-size: 18px;
+  font-weight: 400;
+}
+body .want-to-play {
+  padding-top: 76px;
+}
+body .want-to-play .form-control {
+  width: 60%;
+  margin: 0;
+  border-color: #212121;
+  background-color: transparent;
+  margin-right: 15px;
+  border-radius: 4px!important;
+}
+body .how-its-works h3,
+body .partners h3,
+body .team h3,
+body .feedback h3 {
+  text-transform: uppercase;
+  color: #212121;
+  text-align: center;
+}
+body .how-its-works .col-md-2 {
+  padding: 0;
+}
+body .steps-row {
+  margin-left: 50px;
+}
+body .inline-block {
+  display: inline-block;
+  width: 100%;
+  font-size: 0;
+}
+body .inline-block div {
+  float: left;
+}
+body .inline-block .img {
+  width: 17%;
+  text-align: center;
+}
+body .inline-block .arr {
+  width: 3%;
+  text-align: center;
+}
+body .next-arrow {
+  margin-top: 200%;
+}
+body .how-its-works p,
+body .team p {
+  color: #4c3f2f;
+  font-size: 16px;
+}
+body .partners,
+body .team {
+  text-align: center;
+}
+body .partners .col-md-3 {
+  padding: 0;
+}
+body .team h4 {
+  text-transform: uppercase;
+  color: #4c3f2f;
+  text-align: center;
+}
+body .team .img {
+  width: 20%;
+}
+body .bithday {
+  min-height: 220px;
+  padding-top: 98px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+body .bithday h1 {
+  color: #f1c40f;
+  font-size: 34px;
+  margin: 0;
+}
+body .bottom-strike {
+  border-bottom: 5px solid  #f1c40f;
+  max-width: 509px;
+  margin: 0 auto;
+}
+body .feedback h4,
+body .feedback p {
+  color: #4c3f2f;
+  font-size: 15px;
+  font-weight: 400;
+}
+body .feedback h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+body .feedback .inline-block img {
+  float: left;
+}
+body .footer {
+  padding-top: 50px;
+}
+body .logo-img {
+  text-align: left;
+}
+body .share-buttons {
+  text-align: center;
+}
+body .share-buttons,
+body .contacts {
+  margin-top: 18px;
+}
+body .contacts {
+  text-align: right;
+}
+body .modal {
+  margin-top: 100px;
+}
+body .modal p {
+  font-weight: normal;
+  font-size: 12px;
+}
+body .modal-dialog {
+  width: 750px;
+  border: 3pt solid #f1c40f;
+  min-height: 200px;
+  background-image: url(../images/form-bg.png);
+  margin: 0 auto;
+}
+body .modal-content {
+  border-radius: 0!important;
+  box-shadow: none;
+  background-image: url(../images/form-bg.png);
+  padding: 0 35px;
+}
+body .close {
+  font-size: 50px;
+  font-weight: normal;
+  margin-right: 10px;
+  color: #f1c40f;
+  opacity: 1;
+}
 @media (min-width: 768px) and (max-width: 991px) {
   body h1 {
     font-size: 38px;
@@ -5932,12 +6260,45 @@ body .header-perfomance h3 {
   body .header-perfomance {
     text-align: center;
   }
+  body .header-perfomance h3 {
+    font-size: 16px;
+  }
   body .time-container {
-    width: auto;
+    width: 315px;
     margin: 0 auto;
   }
   body .logo {
     margin-left: -20px;
+    width: 270px;
+  }
+  body .time-container p {
+    font-size: 14px;
+  }
+  body .steps-row {
+    margin-left: 30px;
+  }
+  body .team .img {
+    width: 33%;
+  }
+  body .team .last-two {
+    width: 50%;
+  }
+  body .want-to-play .form-control {
+    width: 53%;
+  }
+  body .share-buttons,
+  body .contacts {
+    margin-top: 18px;
+  }
+  body .share-buttons,
+  body .contacts,
+  body .logo-img {
+    text-align: center;
+    margin-top: 0;
+  }
+  body .contacts,
+  body .footer {
+    padding-top: 20px;
   }
 }
 @media (max-width: 767px) {
@@ -5948,7 +6309,8 @@ body .header-perfomance h3 {
     width: 250px;
     margin-left: 0;
   }
-  body .phones input[type=button] {
+  body .phones input[type=button],
+  body .want-to-play input[type=button] {
     background: url('../images/button-bg-min.png');
     width: 130px;
     font-size: 10px;
@@ -5958,6 +6320,7 @@ body .header-perfomance h3 {
   }
   body .header-perfomance .time-container {
     margin: 0 auto;
+    width: 213px;
   }
   body h1 {
     font-size: 28px;
@@ -5974,5 +6337,57 @@ body .header-perfomance h3 {
   }
   body .time-container .time {
     padding: 10px;
+  }
+  body .time-container {
+    font-size: 16px;
+  }
+  body .header-perfomance h3 {
+    font-size: 12px;
+  }
+  body .time-container p {
+    font-size: 12px;
+  }
+  body .steps-row {
+    margin-left: 0;
+  }
+  body .next-arrow {
+    transform: rotate(90deg);
+    margin: 17px;
+  }
+  body .img-responsive {
+    display: inline;
+  }
+  body .inline-block .arr,
+  body .inline-block .img {
+    width: 100%;
+    height: auto;
+  }
+  body .bottom-strike {
+    max-width: 370px;
+  }
+  body .bithday h1 {
+    font-size: 24px;
+  }
+  body .want-to-play h1 {
+    font-size: 24px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #f1c40f;
+  }
+  body .want-to-play h2 {
+    font-size: 18px;
+    font-weight: 400;
+  }
+  body .want-to-play .form-control {
+    width: 52%;
+  }
+  body .share-buttons,
+  body .contacts,
+  body .logo-img {
+    text-align: center;
+    margin-top: 0;
+  }
+  body .contacts,
+  body .footer {
+    padding-top: 20px;
   }
 }
