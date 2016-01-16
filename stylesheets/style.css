@@ -1,0 +1,86 @@
+/* line 1, ../sass/style.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 4, ../sass/style.scss */
+html {
+  font-family: Arial;
+}
+
+/* line 7, ../sass/style.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 300;
+}
+
+/* line 16, ../sass/style.scss */
+.shph_container {
+  width: 100%;
+  display: table;
+  position: relative;
+  table-layout: fixed;
+}
+/* line 22, ../sass/style.scss */
+.shph_header {
+  width: 100%;
+  background-color: #f16b6b;
+}
+/* line 25, ../sass/style.scss */
+.shph_header__items {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+  color: black;
+  font-size: 12px;
+}
+/* line 32, ../sass/style.scss */
+.shph_header__item {
+  width: 50%;
+  display: table-cell;
+  vertical-align: middle;
+}
+/* line 37, ../sass/style.scss */
+.shph_header__nav-menu {
+  float: right;
+}
+/* line 41, ../sass/style.scss */
+.shph_header__nav-item {
+  display: inline-block;
+  padding: 15px 0;
+}
+/* line 45, ../sass/style.scss */
+.shph_header__nav-item a {
+  border-right: 1px solid black;
+  display: inline-block;
+  padding: 0 30px;
+  text-transform: uppercase;
+}
+/* line 51, ../sass/style.scss */
+.shph_header__nav-item:last-child a {
+  border: none;
+  padding: 0 0 0 30px;
+}
+/* line 55, ../sass/style.scss */
+.shph_header__nav-item:hover {
+  color: white;
+}
+/* line 63, ../sass/style.scss */
+.shph_header__phone-icon {
+  float: left;
+  text-align: center;
+  margin-right: 30px;
+}
+/* line 67, ../sass/style.scss */
+.shph_header__phone-icon img {
+  width: 10px;
+  height: auto;
+}
+
+/* line 75, ../sass/style.scss */
+.rf_container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 75px;
+}
