@@ -1,0 +1,19 @@
+// grid variables
+$grid-columns: 12;
+$grid-max-width: 65em;
+// breakpoints
+$breakpoint-extrasmall: "only screen and (max-width: 544px)";
+$breakpoint-small: "only screen and (min-width: 544px)";
+$breakpoint-medium: "only screen and (min-width: 768px)";
+$breakpoint-large: "only screen and (min-width: 992px)";
+%clearfix {
+    *zoom: 1;
+    &:before,
+    &:after {
+        content: " ";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}

@@ -1,0 +1,15 @@
+/* line 1, ../sass/style.scss */
+.container {
+  min-width: 1000px;
+  position: relative;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 8, ../sass/style.scss */
+body {
+  width: 200px;
+  height: 200px;
+  background-color: black;
+}
