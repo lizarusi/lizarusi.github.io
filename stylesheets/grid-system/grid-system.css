@@ -26,7 +26,7 @@
 /* line 15, ../../sass/grid-system/grid-system.scss */
 [class*='col-md-'], [class*='col-lg-'], [class*='col-sm-'], [class*='col-xs-'] {
   float: left;
-  padding: 2px;
+  padding: 10px;
   width: 100%;
   min-height: 1px;
 }

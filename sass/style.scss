@@ -1,12 +1,244 @@
+body {
+  font-family: Arial;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
 .container {
-  min-width: 1000px;
+  max-width: 900px;
   position: relative;
   padding: 15px;
   margin-left:  auto;
   margin-right: auto;
 }
-body {
-  width: 200px;
-  height: 200px;
-  background-color: black;
+.search-button {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: rgb(147, 60, 63);
+  color: rgb(223, 31, 37);
+  padding: 9.6px;
+
+}
+header {
+  background-color: rgb(59, 59, 59);
+  min-height: 300px;
+  .header-content {
+    padding: 100px;
+    display: table;
+    margin: 0 auto;
+    .search-form {
+      margin-top: 20px;
+      position: relative;
+      width: 650px;
+      display: block;
+    }
+    #search {
+      background-color: rgb(223, 31, 37);
+      border: 1px solid rgb(255, 168, 52);
+
+      padding: 10px;
+      line-height: normal;
+      border-radius: 4px;
+      width: 100%;
+
+    }
+    .search-button {
+      position: absolute;
+      right: 1px;
+      top: 1px;
+      border-top-right-radius: 4px;
+      border-bottom-right-radius: 4px;
+    }
+  }
+  .logo-container {
+    text-align: center;
+
+  }
+  .img-logo {
+    width: 550px;
+
+  }
+}
+.it-happens {
+  background-color: rgb(228, 223, 225);
+  min-width: 500px;
+  box-shadow: 3px 7px 10px 1px #bababa;
+  padding: 50px;
+
+  .stores-list-logo {
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #bfbfbf;
+    max-width: 450px;
+
+  }
+  .store-container {
+    box-shadow: 1px 0px 5px 0px rgba(50,50,50,0.2);
+    border-radius: 5px;
+    height: 100%;
+    background-color: white;
+    padding: 10px 5px;
+    text-align: center;
+    margin: 0 5px;
+    .logo-store-container {
+      height: 50px;
+      width: 100%;
+    }
+    &:hover {
+      .deal-container p{
+        color: red;
+      }
+      img {
+        width: 80px;
+      }
+    }
+
+      p {
+        color: lightgray;
+        font-size: 10px;
+        text-decoration: none;
+
+    }
+
+    img {
+      width: 70px;
+      margin-bottom: 10px;
+
+    }
+    .deal-container {
+      padding: 10px;
+      border-top: solid 1px black;
+    }
+  }
+  .items-container {
+    font-size: 0;
+
+    li {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      position: relative;
+    }
+  }
+
+  .it-happens-container {
+    display: table;
+    margin: 0 auto;
+  }
+  h1, h3 {
+    text-transform: uppercase;
+    text-align: center;
+    margin: 1em;
+    color: rgb(223, 31, 37);
+  }
+  h3 {
+    clear: both;
+    font-size: 18px;
+    font-weight: normal;
+  }
+  h1 {
+
+    font-size: 30px;
+    font-weight: 700;
+
+  }
+}
+.content {
+  min-width: 500px;
+  padding: 40px;
+  .logo-container {
+    text-align: center;
+    color: rgb(223, 31, 37);
+    font-size: 24px;
+  }
+  .product-deals {
+    display: table;
+    padding: 10px;
+    span {
+      display: table-cell;
+      font-size: 14px;
+
+      vertical-align: middle;
+      color: rgb(223, 31, 37);
+      img {
+        margin-right: 10px;
+      }
+    }
+  }
+  .product-name {
+    padding: 10px;
+    display: table;
+    width: 100%;
+    span {
+      color: ligthgray;
+      font-size: 14px;
+      vertical-align: middle;
+      display: table-cell;
+      text-align: left;
+      padding: 0;
+      margin: 0;
+    }
+    .link {
+      text-align: right;
+    }
+
+  }
+  .product {
+    box-shadow: 3px 0px 10px 0px #bababa;
+    border-radius: 5px;
+    &:hover {
+      .product-name {
+          color: red!important;
+      }
+
+      .image-container-product {
+        img {
+          width: 120px;
+        }
+      }
+    }
+  }
+  .image-container-product, .product-name {
+    border-bottom: 1px solid rgb(208, 208, 208);
+  }
+  .image-container-product {
+    padding: 10px;
+    height: 100px;
+    text-align: center;
+
+    img {
+      width: 100px;
+
+    }
+  }
+}
+footer {
+  background-color: rgb(244, 244, 244);
+  min-height: 100px;
+  box-shadow: 0 -5px 5px rgba(0,0,0,0.1);
+  -moz-box-shadow: 0 -5px 5px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 -5px 5px rgba(0,0,0,0.1);
+
+  padding: 50px;
+  .copyright {
+    font-size: 10;
+
+  }
+  .top-link {
+    font-size: 14px;
+    margin-bottom: 10px;
+    a {
+      color: lightgray;
+      &:hover {
+          text-decoration: underline;
+      }
+    }
+  }
+  .copyright, .top-link {
+    text-align: center;
+    color: lightgray;
+  }
+
 }

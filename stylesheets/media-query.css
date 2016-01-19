@@ -1,0 +1,27 @@
+@media only screen and (max-width: 765px) {
+  /* line 4, ../sass/media-query.scss */
+  .search-form {
+    width: 420px !important;
+  }
+
+  /* line 9, ../sass/media-query.scss */
+  .logo-container img {
+    width: 300px !important;
+  }
+
+  /* line 14, ../sass/media-query.scss */
+  .logo-container img {
+    width: 400px !important;
+  }
+}
+@media only screen and (max-width: 544px) {
+  /* line 20, ../sass/media-query.scss */
+  .search-form {
+    width: 100% !important;
+  }
+
+  /* line 25, ../sass/media-query.scss */
+  .logo-container img {
+    width: 250px !important;
+  }
+}

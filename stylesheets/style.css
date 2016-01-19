@@ -1,15 +1,268 @@
 /* line 1, ../sass/style.scss */
+body {
+  font-family: Arial;
+}
+
+/* line 4, ../sass/style.scss */
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* line 8, ../sass/style.scss */
 .container {
-  min-width: 1000px;
+  max-width: 900px;
   position: relative;
   padding: 15px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* line 8, ../sass/style.scss */
-body {
-  width: 200px;
-  height: 200px;
-  background-color: black;
+/* line 15, ../sass/style.scss */
+.search-button {
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: #933c3f;
+  color: #df1f25;
+  padding: 9.6px;
+}
+
+/* line 24, ../sass/style.scss */
+header {
+  background-color: #3b3b3b;
+  min-height: 300px;
+}
+/* line 27, ../sass/style.scss */
+header .header-content {
+  padding: 100px;
+  display: table;
+  margin: 0 auto;
+}
+/* line 31, ../sass/style.scss */
+header .header-content .search-form {
+  margin-top: 20px;
+  position: relative;
+  width: 650px;
+  display: block;
+}
+/* line 37, ../sass/style.scss */
+header .header-content #search {
+  background-color: #df1f25;
+  border: 1px solid #ffa834;
+  padding: 10px;
+  line-height: normal;
+  border-radius: 4px;
+  width: 100%;
+}
+/* line 47, ../sass/style.scss */
+header .header-content .search-button {
+  position: absolute;
+  right: 1px;
+  top: 1px;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+/* line 55, ../sass/style.scss */
+header .logo-container {
+  text-align: center;
+}
+/* line 59, ../sass/style.scss */
+header .img-logo {
+  width: 550px;
+}
+
+/* line 64, ../sass/style.scss */
+.it-happens {
+  background-color: #e4dfe1;
+  min-width: 500px;
+  box-shadow: 3px 7px 10px 1px #bababa;
+  padding: 50px;
+}
+/* line 70, ../sass/style.scss */
+.it-happens .stores-list-logo {
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #bfbfbf;
+  max-width: 450px;
+}
+/* line 77, ../sass/style.scss */
+.it-happens .store-container {
+  box-shadow: 1px 0px 5px 0px rgba(50, 50, 50, 0.2);
+  border-radius: 5px;
+  height: 100%;
+  background-color: white;
+  padding: 10px 5px;
+  text-align: center;
+  margin: 0 5px;
+}
+/* line 85, ../sass/style.scss */
+.it-happens .store-container .logo-store-container {
+  height: 50px;
+  width: 100%;
+}
+/* line 90, ../sass/style.scss */
+.it-happens .store-container:hover .deal-container p {
+  color: red;
+}
+/* line 93, ../sass/style.scss */
+.it-happens .store-container:hover img {
+  width: 80px;
+}
+/* line 98, ../sass/style.scss */
+.it-happens .store-container p {
+  color: lightgray;
+  font-size: 10px;
+  text-decoration: none;
+}
+/* line 105, ../sass/style.scss */
+.it-happens .store-container img {
+  width: 70px;
+  margin-bottom: 10px;
+}
+/* line 110, ../sass/style.scss */
+.it-happens .store-container .deal-container {
+  padding: 10px;
+  border-top: solid 1px black;
+}
+/* line 115, ../sass/style.scss */
+.it-happens .items-container {
+  font-size: 0;
+}
+/* line 118, ../sass/style.scss */
+.it-happens .items-container li {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+/* line 126, ../sass/style.scss */
+.it-happens .it-happens-container {
+  display: table;
+  margin: 0 auto;
+}
+/* line 130, ../sass/style.scss */
+.it-happens h1, .it-happens h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 1em;
+  color: #df1f25;
+}
+/* line 136, ../sass/style.scss */
+.it-happens h3 {
+  clear: both;
+  font-size: 18px;
+  font-weight: normal;
+}
+/* line 141, ../sass/style.scss */
+.it-happens h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+/* line 148, ../sass/style.scss */
+.content {
+  min-width: 500px;
+  padding: 40px;
+}
+/* line 151, ../sass/style.scss */
+.content .logo-container {
+  text-align: center;
+  color: #df1f25;
+  font-size: 24px;
+}
+/* line 156, ../sass/style.scss */
+.content .product-deals {
+  display: table;
+  padding: 10px;
+}
+/* line 159, ../sass/style.scss */
+.content .product-deals span {
+  display: table-cell;
+  font-size: 14px;
+  vertical-align: middle;
+  color: #df1f25;
+}
+/* line 165, ../sass/style.scss */
+.content .product-deals span img {
+  margin-right: 10px;
+}
+/* line 170, ../sass/style.scss */
+.content .product-name {
+  padding: 10px;
+  display: table;
+  width: 100%;
+}
+/* line 174, ../sass/style.scss */
+.content .product-name span {
+  color: ligthgray;
+  font-size: 14px;
+  vertical-align: middle;
+  display: table-cell;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+/* line 183, ../sass/style.scss */
+.content .product-name .link {
+  text-align: right;
+}
+/* line 188, ../sass/style.scss */
+.content .product {
+  box-shadow: 3px 0px 10px 0px #bababa;
+  border-radius: 5px;
+}
+/* line 192, ../sass/style.scss */
+.content .product:hover .product-name {
+  color: red !important;
+}
+/* line 197, ../sass/style.scss */
+.content .product:hover .image-container-product img {
+  width: 120px;
+}
+/* line 203, ../sass/style.scss */
+.content .image-container-product, .content .product-name {
+  border-bottom: 1px solid #d0d0d0;
+}
+/* line 206, ../sass/style.scss */
+.content .image-container-product {
+  padding: 10px;
+  height: 100px;
+  text-align: center;
+}
+/* line 211, ../sass/style.scss */
+.content .image-container-product img {
+  width: 100px;
+}
+
+/* line 217, ../sass/style.scss */
+footer {
+  background-color: #f4f4f4;
+  min-height: 100px;
+  box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.1);
+  padding: 50px;
+}
+/* line 225, ../sass/style.scss */
+footer .copyright {
+  font-size: 10;
+}
+/* line 229, ../sass/style.scss */
+footer .top-link {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+/* line 232, ../sass/style.scss */
+footer .top-link a {
+  color: lightgray;
+}
+/* line 234, ../sass/style.scss */
+footer .top-link a:hover {
+  text-decoration: underline;
+}
+/* line 239, ../sass/style.scss */
+footer .copyright, footer .top-link {
+  text-align: center;
+  color: lightgray;
 }
