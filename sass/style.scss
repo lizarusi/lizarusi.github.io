@@ -11,9 +11,7 @@ p, h1 {
   margin: 0;
   padding: 0;
 }
-p {
-  font-size: 18px!important;
-}
+
 ul {
   list-style: none;
 }
@@ -102,7 +100,7 @@ h1 {
 
    p, table {
      padding: 0 0 0 40px;
-     font-size: 14px;
+     font-size: 16px;
 
    }
    span {
@@ -120,16 +118,17 @@ h1 {
        border-right: 1px solid black;
      }
      vertical-align: top;
-     min-width: 40%;
+
    }
    table {
      width: 100%;
      margin-top: 10px;
      position: relative;
-     padding: 0 40px;
+     padding: 0 30px;
    }
    table p {
      text-indent: 0;
+     font-size: 15px;
    }
     p {
       text-indent: 20px;
