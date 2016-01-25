@@ -8,8 +8,11 @@ body {
   font-family: $font-stack;
 }
 p, h1 {
-  padding: 0;
   margin: 0;
+  padding: 0;
+}
+p {
+  font-size: 16px!important;
 }
 ul {
   list-style: none;
