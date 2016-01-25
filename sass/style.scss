@@ -42,7 +42,7 @@ h1 {
     &__photo {
       padding: 10px 0;
       img {
-        @include box-shadow;
+        // @include box-shadow;
         width: $photo-size;
         border-radius: 10px;
       }

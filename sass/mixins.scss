@@ -13,8 +13,8 @@
   background: -ms-linear-gradient(top, rgb(219, 238, 242));
   background: linear-gradient(top, rgb(219, 238, 242));
 }
-@mixin box-shadow {
-  -webkit-box-shadow: 13px 9px 31px -17px rgba(0,0,0,0.75);
--moz-box-shadow: 13px 9px 31px -17px rgba(0,0,0,0.75);
-box-shadow: 13px 9px 31px -17px rgba(0,0,0,0.75);
-}
+// @mixin box-shadow {
+//   -webkit-box-shadow: 13px 9px 31px -17px rgba(0,0,0,0.75);
+// -moz-box-shadow: 13px 9px 31px -17px rgba(0,0,0,0.75);
+// box-shadow: 13px 9px 31px -17px rgba(0,0,0,0.75);
+// }
