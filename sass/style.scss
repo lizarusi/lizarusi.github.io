@@ -24,7 +24,7 @@ h1 {
   width: 900px;
   display: table;
   position: relative;
-  margin: 30px auto;
+  margin: 10px auto;
 }
 .res {
   &_head {
@@ -78,7 +78,7 @@ h1 {
     }
   }
   &_about {
-  padding: 20px;
+  padding: 0 20px;
   h1 {
     font-weight: normal;
     position: relative;
