@@ -1,317 +1,117 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Title</title>
+<meta charset="utf-8">
+<title>Resume</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<link href="stylesheets/screen.css" rel="stylesheet" type="text/css" />
-<!--[if IE]>
-*   <link href="stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
-* <![endif]-->
+<link href="css/grid-system/grid-system.css"  rel="stylesheet" type="text/css" />
+<link href="css/style.css"  rel="stylesheet" type="text/css" />
+
 </head>
+
 <body>
-<header>
-  <div class="header-content">
-    <div class="logo-container">
-      <img class="img-logo" src="img/Copy of black_logo_homepage_x2.png" alt="" />
-    </div>
-    <form class="search-form"action="">
-      <input type="text" id="search" placeholder="Search">
-      <div class="search-button">
-        <i class="fa fa-search"></i>
+  <div class="res_container">
+    <header class="res_head">
+      <div class="res_head__photo">
+        <img src="image/liza.jpg" alt="" />
       </div>
-    </form>
+      <div class="res_head__pers-data">
+        <h1>Елизавета Русских</h1>
+        <p>
+          <i class="fa fa-birthday-cake "></i>
+          16.02.1997
+        </p>
+        <p>
+          <i class="fa fa-phone"></i>
+          +380635157971
+        </p>
 
+        <p>
+          <i class="fa fa-skype"></i>
+          forin.white
+        </p>
+        <p>
+          <i class="fa  fa-facebook-square"></i>
+          <a href="https://www.facebook.com/liza.ruskih">
+            www.facebook.com/liza.ruskih
+          </a>
+
+        </p>
+        <p>
+          <i class="fa fa-upwork"></i>
+
+        </p>
+      </div>
+    </header>
+    <section class="res_about">
+
+        <h1>Про меня</h1>
+
+
+      <p>Я люблю погружаться в процесс. Считаю что работаться должно с удовольствием и по этой причине люблю сферу IT. Учусь в Киевском Политехническом Институте 2 курс. В свободное время занимаюсь версткой (около года) учу Javascript, Jquery, ReactJS.
+        <h1 class="hobby">Хобби</h1>
+
+      <p>Занимаюсь спортом, катаюсь на сноуборде и роликах. Читаю книги, особенно люблю детективы, иногда рисую. Но самым главным хобби я считаю программирование, для меня это не только работа, но и любимое занятие.</p>
+      <h1>Образование</h1>
+      <table>
+        <tr>
+          <td><p>Киевский Политехнический Институт</p> <p><span>2014-2019</span></p></td>
+          <td>Факультет информатики и вычеслительной техники, програмная инженерия</td>
+        </tr>
+      </table>
+      <h1 class="hobby">Опыт работы</h1>
+      <p>Пол года работы на upwork. Исправляла баги во фронтенде, верстала различные адаптивные сайты, а так же верстка pixel perfect. Делала плагины на jQuery и React js. На данный момент нету опыта на постоянной работе.</p>
+
+    </section>
+    <section class="res_skills">
+    <h1 class="skill-head"><span>Навыки</span></h1>
+     <table class="skills">
+        <tr>
+          <td>
+            <h1>JavaScript</h1>
+            <p>ECMA 6</p>
+            <p>
+              jQuery
+            </p>
+            <p>
+              React js
+            </p>
+            <p>
+              Angular
+            </p>
+            <p>
+              Ajax
+            </p>
+            <p>
+              Node js
+            </p>
+          </td>
+          <td>
+            <h1>HTML</h1>
+            <p>HTML5</p>
+            <p>Jade</p>
+            <p>Handlebars</p>
+          </td>
+          <td>
+            <h1>CSS</h1>
+            <p>Less</p>
+            <p>Sass/Scss</p>
+            <p>Bootstrap</p>
+            <p>Materialize</p>
+          </td>
+          <td>
+            <h1>Databases</h1>
+            <p>Postgress</p>
+            <p>MySQL</p>
+            <p>MongoDB</p>
+          </td>
+          <td>
+            <h1>Git</h1>
+          </td>
+        </tr>
+     </table>
+    </section>
   </div>
-</header>
-<section class="it-happens">
-  <div class="it-happens-container">
-      <h1>It`s Happening </h1>
-      <div class="stores-list-logo">
-          <img src="img/Copy of black-now.png" alt="" />
-      </div>
-      <h3>THE BEST DEALS FROM OVER 1,000 STORES, INCLUDING:</h3>
-      <ul class="items-container">
-
-        <li>
-          <div class="store-container"><a href="">
-            <div class="logo-store-container">
-              <img src="img/Copy of logo-aliexpress.png" alt="" />
-            </div>
-
-            <div class="deal-container">
-              <p>100 Deals</p>
-            </div>
-          </a>
-          </div>
-        </li>
-        <li>
-          <div class="store-container"><a href="">
-            <div class="logo-store-container">
-              <img src="img/Copy of logo-aliexpress.png" alt="" />
-            </div>
-              <div class="deal-container">
-                <p>100 Deals</p>
-              </div>
-          </a></div>
-        </li>
-        <li>
-          <div class="store-container"><a href="">
-            <div class="logo-store-container">
-              <img src="img/Copy of logo-aliexpress.png" alt="" />
-            </div>
-            <div class="deal-container">
-              <p>100 Deals</p>
-            </div>
-          </a>
-        </div>
-        </li>
-        <li>
-          <div class="store-container"><a href="">
-            <div class="logo-store-container">
-              <img src="img/Copy of logo-aliexpress.png" alt="" />
-            </div>
-            <div class="deal-container">
-              <p>100 Deals</p>
-            </div>
-          </a></div>
-        </li>
-        <li>
-          <div class="store-container"><a href="">
-            <div class="logo-store-container">
-              <img src="img/Copy of logo-aliexpress.png" alt="" />
-            </div>
-            <div class="deal-container">
-              <p>100 Deals</p>
-            </div>
-          </a></div>
-        </li>
-        <li>
-          <div class="store-container"><a href="">
-            <div class="logo-store-container">
-              <img src="img/Copy of logo-aliexpress.png" alt="" />
-            </div>
-            <div class="deal-container">
-              <p>100 Deals</p>
-            </div>
-          </a></div>
-        </li>
-        <li>
-          <div class="store-container"><a href="">
-            <div class="logo-store-container">
-              <img src="img/Copy of logo-aliexpress.png" alt="" />
-            </div>
-            <div class="deal-container">
-              <p>100 Deals</p>
-            </div>
-          </a>
-        </div>
-
-        </li>
-
-      </ul>
-
-  </div>
-
-</section>
-<section class="content">
-  <div class="logo-container">
-    <img src="img/Copy of black-now.png" alt="">
-    <h3>Top popular Deals</h3>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6">
-        <div class="product">
-          <a href="">
-            <div class="image-container-product">
-              <img src="img/Copy of logo-target.png" alt="">
-            </div>
-            <div class="product-name">
-              <span class="name">Name</span>
-              <span class="link">See deals</span>
-              <span>
-                <img src="img/Copy of galery-arrow.png" alt="" />
-              </span>
-            </div>
-            <div class="product-deals">
-              <span>
-                <img src="img/Copy of popular-v.png" alt="" />
-              </span>
-              <span>100 Deals</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="product">
-          <a href="">
-            <div class="image-container-product">
-              <img src="img/Copy of logo-target.png" alt="">
-            </div>
-            <div class="product-name">
-              <span class="name">Name</span>
-              <span class="link">See deals</span>
-              <span>
-                <img src="img/Copy of galery-arrow.png" alt="" />
-              </span>
-            </div>
-            <div class="product-deals">
-              <span>
-                <img src="img/Copy of popular-v.png" alt="" />
-              </span>
-              <span>100 Deals</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="product">
-          <a href="">
-            <div class="image-container-product">
-              <img src="img/Copy of logo-target.png" alt="">
-            </div>
-            <div class="product-name">
-              <span class="name">Name</span>
-              <span class="link">See deals</span>
-              <span>
-                <img src="img/Copy of galery-arrow.png" alt="" />
-              </span>
-            </div>
-            <div class="product-deals">
-              <span>
-                <img src="img/Copy of popular-v.png" alt="" />
-              </span>
-              <span>100 Deals</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="product">
-          <a href="">
-            <div class="image-container-product">
-              <img src="img/Copy of logo-target.png" alt="">
-            </div>
-            <div class="product-name">
-              <span class="name">Name</span>
-              <span class="link">See deals</span>
-              <span>
-                <img src="img/Copy of galery-arrow.png" alt="" />
-              </span>
-            </div>
-            <div class="product-deals">
-              <span>
-                <img src="img/Copy of popular-v.png" alt="" />
-              </span>
-              <span>100 Deals</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="product">
-          <a href="">
-            <div class="image-container-product">
-              <img src="img/Copy of logo-target.png" alt="">
-            </div>
-            <div class="product-name">
-              <span class="name">Name</span>
-              <span class="link">See deals</span>
-              <span>
-                <img src="img/Copy of galery-arrow.png" alt="" />
-              </span>
-            </div>
-            <div class="product-deals">
-              <span>
-                <img src="img/Copy of popular-v.png" alt="" />
-              </span>
-              <span>100 Deals</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="product">
-          <a href="">
-            <div class="image-container-product">
-              <img src="img/Copy of logo-target.png" alt="">
-            </div>
-            <div class="product-name">
-              <span class="name">Name</span>
-              <span class="link">See deals</span>
-              <span>
-                <img src="img/Copy of galery-arrow.png" alt="" />
-              </span>
-            </div>
-            <div class="product-deals">
-              <span>
-                <img src="img/Copy of popular-v.png" alt="" />
-              </span>
-              <span>100 Deals</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="product">
-          <a href="">
-            <div class="image-container-product">
-              <img src="img/Copy of logo-target.png" alt="">
-            </div>
-            <div class="product-name">
-              <span class="name">Name</span>
-              <span class="link">See deals</span>
-              <span>
-                <img src="img/Copy of galery-arrow.png" alt="" />
-              </span>
-            </div>
-            <div class="product-deals">
-              <span>
-                <img src="img/Copy of popular-v.png" alt="" />
-              </span>
-              <span>100 Deals</span>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="col-md-3 col-sm-6">
-        <div class="product">
-          <a href="">
-            <div class="image-container-product">
-              <img src="img/Copy of logo-target.png" alt="">
-            </div>
-            <div class="product-name">
-              <span class="name">Name</span>
-              <span class="link">See deals</span>
-              <span>
-                <img src="img/Copy of galery-arrow.png" alt="" />
-              </span>
-            </div>
-            <div class="product-deals">
-              <span>
-                <img src="img/Copy of popular-v.png" alt="" />
-              </span>
-              <span>100 Deals</span>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<footer>
-  <div class="copyright">
-    <p>
-      Copyright 2015 by Black Friday Deals
-    </p>
-
-  </div>
-  <div class="top-link">
-    <a href="">Terms of conditions</a>
-    <a href="">Privacy</a>
-    <a href="">Contact</a>
-  </div>
-</footer>
 </body>
 
 </html>
