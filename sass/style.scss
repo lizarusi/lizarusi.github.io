@@ -109,11 +109,12 @@ h1 {
    table td {
      padding: 0 20px;
      margin:  0;
-     border-color: black;
-     border-width: 0 0 0 0;
-     border-style: solid;
+     border: none;
+    //  border-color: black;
+    //  border-width: 0 0 0 0;
+    //  border-style: solid;
      &:first-child {
-       border-width: 0 1px 0 0;
+       border-right: 1px solid black;
      }
      vertical-align: top;
      min-width: 40%;
@@ -160,16 +161,17 @@ h1 {
       td {
           text-align: center;
           width: 20%;
-          border-width: 0 1px 0 0;
-          border-color: rgb(156, 154, 154);
-          border-style: solid;
+          border-right: 1px solid rgb(156, 154, 154);
+          // border-width: 0 1px 0 0;
+          // border-color: rgb(156, 154, 154);
+          // border-style: solid;
           vertical-align: top;
           &:first-child {
-              border-width: 0 1px 0 1px;
+                border-left: 1px solid rgb(156, 154, 154);
           }
           h1 {
             font-size: 25px;
-            font-weight: 700;
+            font-size: Open Sans Bold;
             margin-bottom: 10px;
           }
       }
