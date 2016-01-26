@@ -1,1 +1,13 @@
-// compileCompressed: false;
+// @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,700);
+@font-face {
+    font-family: Open Sans; /* Имя шрифта */
+    src: url(../font/OpenSans-Regular.ttf); /* Путь к файлу со шрифтом */
+   }
+   @font-face {
+       font-family: Open Sans Bold; /* Имя шрифта */
+       src: url(../font/OpenSans-Bold.ttf); /* Путь к файлу со шрифтом */
+      }
+$font-stack: Open Sans;
+$photo-size: 100px;
+$name-size: 30px;
+$icons-size: 18px;
