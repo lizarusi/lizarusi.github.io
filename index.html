@@ -2,118 +2,72 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Resume</title>
+<title>Nation Geographic</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 <link href="css/grid-system/grid-system.css"  rel="stylesheet" type="text/css" />
 <link href="css/style.css"  rel="stylesheet" type="text/css" />
-
+<link href="css/header.css"  rel="stylesheet" type="text/css" />
+<link href="css/nav.css"  rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  <div class="res_container">
-    <header class="res_head">
-      <div class="res_head__photo">
-        <img src="image/liza.jpg" alt="" />
+  <div class="ng_container">
+    <header class="ng_header">
+      <div class="ng_header__logo">
+        <img src="images/logo.png" alt="" />
       </div>
-      <div class="res_head__pers-data">
-        <h1>Elizaveta Ruskikh</h1>
-        <p>
-          <i class="fa fa-birthday-cake "></i>
-          16.02.1997
-        </p>
-        <p>
-          <i class="fa fa-phone"></i>
-          +380635157971
-        </p>
+      <div class="ng_header__top-nav">
 
-        <p>
-          <i class="fa fa-skype"></i>
-          forin.white
-        </p>
-        <p>
-          <i class="fa  fa-facebook-square"></i>
-          <a href="https://www.facebook.com/liza.ruskih">
-            www.facebook.com/liza.ruskih
-          </a>
+          <form class="search-form" action="index.html" method="post">
+            <input type="text" name="name" value="" placeholder="Search">
+            <div class="search-icon">
+              <img src="images/search.png" alt="">
+            </div>
+            <table class="search-options">
+              <tr>
+                <td class="category">
+                  <p>All Categories</p>
+                </td>
+                <td class="down-arrow"><img src="images/arrow_down.png" alt=""></td>
+                <td class="search-next">
+                  <img src="images/next.png" alt="">
+                </td>
+              </tr>
 
-        </p>
-        <p>
-          <i class="fa fa-upwork"></i>
+            </table>
+          </form>
+          <table class="acc-buttons">
+            <tr>
+              <td>
+                <img src="images/sign_up.png" alt="" />
+                <p>Sign Up</p>
 
-        </p>
+              </td>
+              <td>
+                  <img src="images/login.png" alt="" />
+                  <p>Login</p>
+              </td>
+            </tr>
+          </table>
+
+
       </div>
     </header>
-    <section class="res_about">
-
-        <h1>About Me</h1>
-
-
-      <p> I love to dive into the process. I think that should work with pleasure and for that reason I like the scope of IT. I study at the Kiev Polytechnic Institute 2 course. In free time I improve my skills or learn something new, having fun doing freelance jobs. I want career growth and development.</p>
-      <h1>Education</h1>
-      <table>
-        <tr>
-          <td><p>Kiev Polytechnic Institute</p> <p><span>2014-2019</span></p></td>
-          <td><p>Department of Computer Science, Software Engineering</p></td>
-        </tr>
-      </table>
-
-    </section>
-    <section class="res_skills">
-    <h1 class="skill-head"><span>Skills</span></h1>
-     <table border = 0 class="skills">
-        <tr>
-          <td>
-            <h1>JavaScript</h1>
-            <p>ECMAScript 6</p>
-            <p>
-              jQuery
-            </p>
-            <p>
-              React
-            </p>
-            <p>
-              Angular
-            </p>
-            <p>
-              Ajax
-            </p>
-            <p>
-              Node
-            </p>
-          </td>
-          <td>
-            <h1>HTML</h1>
-            <p>HTML5</p>
-            <p>Jade</p>
-            <p>Handlebars</p>
-          </td>
-          <td>
-            <h1>CSS</h1>
-            <p>Less</p>
-            <p>SASS/SCSS</p>
-            <p>Bootstrap</p>
-            <p>Materialize</p>
-          </td>
-          <td>
-            <h1>Databases</h1>
-            <p>Postgresql</p>
-            <p>MySQL</p>
-            <p>MongoDB</p>
-          </td>
-          <td>
-            <h1>Git</h1>
-          </td>
-        </tr>
-     </table>
-    </section>
-    <section class="res_about">
-      <h1 class="hobby">Hobby</h1>
-      <p> I am crazy about sport, especially snowboarding and rollerblading. I read books, especially like detectives, sometimes paint. But the main hobby, I think the programming, for me it is not just a job, but also your favorite activity. </p>
-    <h1 class="hobby">Work Expirience</h1>
-    <p>Half a year of work for upwork. Corrected bugs in the front, made adaptive sites, as well as the layout of pixel perfect. Made plugins with jQuery and React js. At the moment, there is no experience on a long-time job.</p>
-
-    </section>
+    <nav class="ng_nav">
+      <div class="ng_nav__menu">
+        <ul>
+          <li class="active"><img src="images\menu-items-1.png" alt=""><p>Home</p></li>
+          <li><img src="images\menu-items-2.png" alt=""><p>Photography</p></li>
+          <li><img src="images\menu-items-3.png" alt=""><p>Video</p></li>
+          <li><img src="images\menu-items-4.png" alt=""><p>Enviroment</p></li>
+          <li><img src="images\menu-items-5.png" alt=""><p>Travel</p></li>
+          <li><img src="images\menu-items-6.png" alt=""><p>Adventure</p></li>
+          <li><img src="images\menu-items-7.png" alt=""><p>Television</p></li>
+          <li><img src="images\menu-items-8.png" alt=""><p>Kids</p></li>
+        </ul>
+      </div>
+      <div class="ng_nav__line-accross"></div>
+    </nav>
   </div>
 </body>
-
 </html>
