@@ -1,0 +1,59 @@
+// compileCompressed: ../css/$1.css
+.email-form {
+  margin-top: 24px;
+  height: 53px;
+  width: 100%;
+  font-size: 0;
+  max-width: 442px;
+  input {
+    border-radius: 7px;
+    border: 1px solid #c8c8c8;
+    padding: 0 20px;
+    background-color: white;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    max-width: 300px;
+
+  }
+  .btn-email-submit, input {
+    display: inline-block;
+    width: 68%;
+    max-width: 300px;
+    vertical-align: top;
+    height: 53px;
+  }
+  .btn-email-submit {
+    border: none;
+    font-size: 22px;
+    color: white;
+    border-radius: 7px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    max-width: 142px;
+    width: 32%;
+    background-color:  #2ecc71;
+  }
+  ::-webkit-input-placeholder {
+    color: #c8c8c8;
+    font-size: 18px;
+    text-transform: capitalize;
+
+
+  }
+  ::-moz-placeholder          {
+    color:  #c8c8c8;
+    font-size: 18px;
+    text-transform: capitalize;
+
+  }/* Firefox 19+ */
+  :-ms-input-placeholder      {
+    color:  #c8c8c8;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  :-moz-placeholder           {
+    color:  #c8c8c8;
+    font-size: 18px;
+    text-transform: capitalize;
+  }/* Firefox 18- */
+}

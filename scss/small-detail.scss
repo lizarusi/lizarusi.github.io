@@ -1,0 +1,46 @@
+// compileCompressed: ../css/$1.css
+.round-button {
+  border: none;
+  position: relative;
+  display: block;
+  height: 54px;
+  width: 54px;
+  border-radius: 50%;
+  background-color: black;
+  opacity: 0.5;
+  display: table-cell;
+  vertical-align: middle;
+
+  img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+  }
+  &:hover {
+    opacity: 1;
+    background-color: #2ecc71;
+  }
+}
+.round-big-button {
+  display: block;
+  margin: 0 auto;
+  height: 98px;
+  opacity: 1;
+  background-color: #2ecc71;
+  width: 98px;
+}
+.social-button {
+  width: 36px;
+  height: 36px;
+  background-color: gray;
+}
+.video {
+  height: 308px;
+  width: 90%;
+  float: right;
+  border-radius: 15px;
+
+}
