@@ -1,0 +1,1 @@
+.rate-stars{position:relative;margin-bottom:2px;cursor:pointer}.rate-stars--empty{background:url("../images/stars.png") repeat-x 0 100%;height:18px;width:90px}.rate-stars--full{position:absolute;background:url("../images/stars.png") repeat-x;height:18px;top:0}

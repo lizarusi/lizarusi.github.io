@@ -1,0 +1,90 @@
+// compileCompressed: ../css/$1.css
+.skill_header {
+  width: 100%;
+  padding-bottom: 0!important;
+  height: 70px;
+  position: relative;
+  background-color: #252525;
+  padding: 0 58px;
+  &__logo, &__menu {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  &__logo {
+    background-image: url(../images/logo.png);
+    width: 93px;
+    height: 36px;
+    float: left;
+    margin-top: 14px;
+  }
+  &__menu {
+    height: 100%;
+    margin-left: 78px;
+    &-item {
+      position: relative;
+      display: inline-block;
+      height: 100%;
+      font-family: GloberThinFree;
+      font-size: 18px;
+      color: white;
+      margin-right: 18px;
+      &--text{
+        line-height: 70px;
+      }
+    }
+    &-item.active {
+      border-bottom: 4px solid #6db40d;
+    }
+  }
+  &__log-in, &__sign-up {
+    font-size: 18px;
+    color: white;
+    height: 100%;
+    display: inline-block;
+  }
+  &__sign-up {
+    margin-left: 10px;
+    padding: 8px 12px 6px 12px;
+    font-family: GloberBoldFree;
+    background-color: #6db40d;
+    border: none;
+    border-radius: 4px;
+  }
+  &__log-in {
+    padding: 6px 10px 4px 10px;
+    font-family: GloberThinFree;
+    border-right: 1px solid white;
+  }
+  &__log-btns {
+    float: right;
+    padding: 16px 0;
+  }
+}
+@media (max-width: 880px){
+  .skill_header {
+    height: auto;
+    padding: 30px;
+    &__logo {
+      display: block;
+      float: none;
+      margin: 0;
+    }
+    &__log-btns {
+
+    }
+    &__menu {
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 690px){
+  .skill_header {
+    padding: 12px;
+    &__log-btns {
+      position: absolute;
+      top: 0;
+      right: 30px;
+    }
+  }
+}

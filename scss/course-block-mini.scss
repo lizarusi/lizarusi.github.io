@@ -1,0 +1,17 @@
+// compileCompressed: ../css/$1.css
+.skill_course-block--mini {
+  position: relative;
+  width: 191px;
+  height: auto;
+  display: inline-block;
+  vertical-align: middle;
+  &__icon {
+    width: 100%;
+    display: block;
+  }
+}
+@media (max-width: 1110px){
+  .skill_course-block--mini {
+    margin-bottom: 20px;
+  }
+}

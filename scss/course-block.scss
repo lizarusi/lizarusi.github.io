@@ -1,0 +1,148 @@
+// compileCompressed: ../css/styles.css
+.course-block {
+  -webkit-box-shadow: 0px 0px 5px 1px rgba(199,199,199,1);
+  -moz-box-shadow: 0px 0px 5px 1px rgba(199,199,199,1);
+  box-shadow: 0px 0px 5px 1px rgba(199,199,199,1);
+  width: 347px;
+  height: 450px;
+  border-radius: 4px;
+  // float: left;
+  display: inline-block;
+  color: white;
+  text-align: left;
+  position: relative;
+  background-color: white;
+  &_header {
+    height: 54px;
+    padding: 12px 15px;
+    color: white;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    &__text, &__logo {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    &__text {
+      color: inherit;
+      margin-left: 13px;
+      text-transform: capitalize;
+      font-size: 27px;
+    }
+    &-word {
+      background-color: #2b65bb;
+      &__logo {
+        vertical-align: middle;
+        display: inline-block;
+        background-image: url(../images/word-logo.png);
+        height: 26px;
+        width: 27px;
+      }
+    }
+    &-pp {
+      background-color: #d95333;
+      &__logo {
+        @extend .course-block_header-word__logo;
+        background-image: url(../images/power_point-logo.png);
+        height: 25px;
+      }
+    }
+    &-exel {
+      background-color: #219053;
+      &__logo {
+        @extend .course-block_header-word__logo;
+        background-image: url(../images/exel-logo.png);
+        height: 25px;
+      }
+    }
+  }
+
+  &_row {
+    height: 124px;
+    width: 100%;
+    border-bottom: 1px solid #cccccc;
+    padding: 18px 0 9px 0;
+    position: relative;
+    &-main {
+      margin-bottom: 15px;
+      &__level-circle--ww {
+        height: 54px;
+        width: 54px;
+        font-weight: 700;
+        color: #6c88b3;
+        display: table-cell;
+        vertical-align: middle;
+        border-radius: 54px;
+        background-color: #ebebeb;
+
+      }
+      &__level-circle--pp {
+        @extend .course-block_row-main__level-circle--ww;
+        color: #c9a59c;
+      }
+      &__level-circle--exel {
+        @extend .course-block_row-main__level-circle--ww;
+        color: #80b999;
+      }
+      &__level-circle--ww, &__level-circle--exel, &__level-circle--pp {
+        p {
+          margin: 0 auto;
+          text-transform: uppercase;
+          font-family: 'Roboto', sans-serif;
+          font-weight: 700;
+          font-size: 39px;
+          display: table;
+        }
+      }
+      &__text {
+        display: table-cell;
+        vertical-align: middle;
+        color: black;
+        font-size: 20px;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        padding-left: 25px;
+        .clock, .time {
+          margin-top: 8px;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+    .free-btn {
+      text-align: center; line-height: 45px;
+      position: absolute;
+      right: -5px;
+      bottom: 8px;
+      border: none;
+      color: white;
+      text-transform: uppercase;
+      font-family: Myriad Pro SemiBold;
+      font-size: 18px;
+      width: 152px;
+      height: 40px;
+      background-image: url(../images/free-btn.png);
+    }
+    .price {
+      float: right;
+      font-size: 18px;
+      color: #508409;
+      font-weight: 700;
+      font-family: 'Roboto', sans-serif;
+    }
+    .rate {
+      color: #919191;
+      float: left;
+      .rate-stars, .rate-count {
+        vertical-align: middle;
+        display: inline-block;
+      }
+      .rate-count {
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+      }
+    }
+    &__container {
+      padding: 0 18px;
+    }
+  }
+}

@@ -1,0 +1,94 @@
+// compileCompressed: ../css/$1.css
+.skill_last-seen {
+  margin: 35px 0;
+  &__row {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ebebeb;
+    border-radius: 4px;
+  }
+  &__header {
+    width: 100%;
+    display: table;
+    height: 54px;
+    padding: 0 18px;
+    font-family: GloberBoldFree;
+    font-size: 18px;
+    color: #898989;
+    border-bottom: 1px solid #e1e1e1;
+    a {
+      color: #27c1f2;
+      text-decoration: underline;
+    }
+    &-wrapper {
+      width: 100%;
+      display: table-cell;
+      vertical-align: middle;
+      height: 100%;
+    }
+    &--txt-left {
+      float: left;
+    }
+    &--txt-right {
+      float: right;
+    }
+  }
+  &__container {
+    width: 100%;
+    padding: 15px 18px;
+    font-size: 0;
+    .skill_course-block--mini:not(:last-child){
+      margin-right: 35px;
+    }
+  }
+  &__course-description {
+    margin-right: 35px;
+    display: inline-block;
+    vertical-align: middle;
+    font-family: GloberThinFree;
+    font-size: 18px;
+
+  }
+  &__progress {
+    margin-top:24px;
+    background-color: white;
+    border: 1px solid #d6d6d6; /* Рамка */
+    height: 21px; /* Высота */
+    box-sizing: border-box;
+    width: 167px;
+    text-align: center;
+    border-radius: 4px; /* Радиус скругления */
+    position: relative; /* Относительное позиционирование */
+    overflow: hidden; /* Прячем ненужную тень */
+    &--full {
+      position: absolute; /* Абсолютное позиционирование */
+       height: 21px; width: 50%;
+       top: 0;
+       left: 0;
+       z-index: 0;
+       background: #6db40d; /* Для старых браузеров */
+    }
+    &--number {
+      position: absolute;
+      font-size: 10px;
+     font-family: Arial;
+     top: 0;
+     bottom: 0;
+     right: 0;
+     line-height: 21px;
+     z-index: 100000;
+     left: 0;
+     margin: auto;
+    }
+  }
+}
+@media (max-width: 1110px) {
+  .skill_last-seen {
+    &__container {
+      text-align: justify;
+    }
+    &__course-description {
+      margin-bottom: 20px;
+    }
+  }
+}

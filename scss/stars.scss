@@ -1,0 +1,18 @@
+// compileCompressed: ../css/$1.css
+.rate-stars {
+  position: relative;
+  margin-bottom: 2px;
+  cursor: pointer;
+  &--empty {
+    background: url('../images/stars.png') repeat-x 0 100%;
+    height: 18px;
+    width: 90px;
+
+  }
+  &--full {
+    position: absolute;
+    background: url('../images/stars.png') repeat-x;
+    height: 18px;
+    top: 0;
+  }
+}

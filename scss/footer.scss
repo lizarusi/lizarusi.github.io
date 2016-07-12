@@ -1,0 +1,69 @@
+// compileCompressed: ../css/$1.css
+.skill_footer {
+  height: 90px;
+  position: relative;
+  display: table;
+  width: 100%;
+  color: #898989;
+  border-top: 1px solid #cccccc;
+  background-color: white;
+  .skill_container {
+    height: 100%;
+    display: block;
+  }
+  &__wrapper {
+    display: table;
+    height: 100%;
+    width: 100%;
+  }
+  &__contacts, &__navigate, &__inf {
+    display: table-cell;
+    vertical-align: middle;
+  }
+  &__logo {
+    background-image: url(../images/logo-black.png);
+    width: 69px;
+    height: 28px;
+    margin-bottom: 12px;
+  }
+  &__copyright, &__contact {
+    font-size: 16px;
+    font-family: Roboto, sans-serif;
+    font-weight: 400;
+  }
+  &__contact {
+    font-size: 18px;
+    display: inline-block;
+    margin-right: 23px;
+    &--icon {
+      display: inline-block;
+      vertical-align: bottom;
+      margin-right: 8px;
+    }
+  }
+  &__top-arrow {
+    float: right;
+    background-image: url(../images/arrow.png);
+    width: 40px;
+    height:27px;
+  }
+}
+@media (max-width: 1110px){
+  .skill_footer {
+    &__wrapper {
+      padding: 0 20px;
+    }
+  }
+}
+@media (max-width: 980px) {
+  .skill_footer {
+    &__contacts {
+      padding: 10px 0;
+      width: 49%;
+    }
+    &__contact {
+      display: block;
+      margin: 0 0 10px 0;
+    }
+  }
+}
