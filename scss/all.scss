@@ -30,12 +30,11 @@ p {
 .skill_container {
   max-width: 1110px;
   font-size: 0;
-  display: table;
   margin: 0 auto;
 }
 .skill_courses-wrapper {
   width: 100%;
-  .skill_course-wrapper:not(:last-child) {
+  .skill_course-wrapper:not(:nth-child(3n)) {
     margin-right: 34px;
   }
 }
@@ -47,7 +46,9 @@ p {
 }
 @media (max-width: 1110px) {
   .skill_container {
-    padding: 3%;
+    padding: 0 3%;
+    max-width: 100%;
+    display: block;
   }
   .skill_courses-wrapper {
     text-align: center;

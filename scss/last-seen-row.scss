@@ -62,7 +62,7 @@
     overflow: hidden; /* Прячем ненужную тень */
     &--full {
       position: absolute; /* Абсолютное позиционирование */
-       height: 21px; width: 50%;
+       height: 21px; width: 27%;
        top: 0;
        left: 0;
        z-index: 0;
@@ -70,8 +70,8 @@
     }
     &--number {
       position: absolute;
-      font-size: 10px;
-     font-family: Arial;
+      font-size: 13px;
+     font-family: GloberThinFree;
      top: 0;
      bottom: 0;
      right: 0;
@@ -89,6 +89,17 @@
     }
     &__course-description {
       margin-bottom: 20px;
+    }
+  }
+}
+@media (max-width: 650px) {
+  .skill_last-seen {
+    &__header {
+      padding: 20px 15px;
+      &--txt-left, &--txt-right {
+        float: none;
+        display: block;
+      }
     }
   }
 }
